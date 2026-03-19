@@ -1,4 +1,3 @@
-import { Radar } from 'lucide-react'
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { SectionLabel } from '@/components/ui/section-label'
 import { portfolioContent } from '@/content/portfolio-content.js'
