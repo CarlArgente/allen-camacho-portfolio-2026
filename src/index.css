@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+:root {
+  --background: #fafafa;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #0052ff;
+  --accent-secondary: #4d7cff;
+  --accent-foreground: #ffffff;
+  --border: #e2e8f0;
+  --card: #ffffff;
+  --ring: #0052ff;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --font-display: 'Calistoga', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+    margin: 0;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+
+  /* ── Heading type scale ──────────────────────────────── */
+  /* h1 & h2 use the display serif (Calistoga); h3–h6 use Inter */
+  h1 {
+    @apply font-sans text-5xl font-bold leading-tight tracking-tight text-foreground;
+  }
+
+  h2 {
+    @apply font-sans text-4xl font-bold leading-tight tracking-tight text-foreground;
+  }
+
+  h3 {
+    @apply font-sans text-xl font-semibold leading-snug tracking-tight text-foreground;
+  }
+
+  h4 {
+    @apply font-sans text-lg font-semibold leading-snug text-foreground;
+  }
+
+  h5 {
+    @apply font-sans text-base font-semibold leading-normal text-foreground;
+  }
+
+  h6 {
+    @apply font-sans text-sm font-semibold leading-normal text-muted-foreground;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-glow {
+  position: absolute;
+  inset: -12rem auto auto -8rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgb(77 124 255 / 18%), transparent 68%);
+  filter: blur(32px);
+  pointer-events: none;
+}
+
+.hero-ring {
+  position: absolute;
+  inset: 2rem;
+  border-radius: 999px;
+  border: 1px dashed rgb(0 82 255 / 30%);
+  animation: spin-slow 62s linear infinite;
+}
+
+.dark-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgb(255 255 255 / 12%) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.hero-float-1 {
+  animation: float-a 5s ease-in-out infinite;
+}
+
+.hero-float-2 {
+  animation: float-b 4.2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.55;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-a {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-b {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+/* ── Preloader ────────────────────────────────────────── */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0f1e;
+  transition:
+    opacity 0.65s ease,
+    visibility 0.65s ease;
+}
+
+.preloader-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Orbital ring container */
+.preloader-orbits {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-orbit {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+}
+
+.preloader-orbit-1 {
+  border-top-color: var(--accent);
+  border-right-color: var(--accent);
+  opacity: 0.9;
+  animation: preloader-spin-1 1.4s linear infinite;
+}
+
+.preloader-orbit-2 {
+  inset: 16px;
+  border-bottom-color: var(--accent-secondary);
+  border-left-color: var(--accent-secondary);
+  opacity: 0.7;
+  animation: preloader-spin-2 2s linear infinite;
+}
+
+.preloader-orbit-3 {
+  inset: 32px;
+  border-top-color: rgb(255 255 255 / 30%);
+  border-right-color: rgb(255 255 255 / 30%);
+  opacity: 0.5;
+  animation: preloader-spin-3 2.8s linear infinite;
+}
+
+/* Central disc with initials */
+.preloader-disc {
+  position: relative;
+  z-index: 2;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 24px rgba(0, 82, 255, 0.5),
+    0 0 56px rgba(0, 82, 255, 0.2);
+  animation: preloader-disc-pulse 1.8s ease-in-out infinite;
+}
+
+.preloader-initials {
+  font-family: 'Calistoga', Georgia, serif;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+/* Staggered name */
+.preloader-name {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 80%);
+  margin: 0;
+}
+
+.preloader-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: preloader-letter-in 0.4s ease forwards;
+}
+
+.preloader-space {
+  display: inline-block;
+  width: 0.6em;
+}
+
+@keyframes preloader-spin-1 {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes preloader-spin-2 {
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes preloader-spin-3 {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes preloader-disc-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 24px rgba(0, 82, 255, 0.5),
+      0 0 56px rgba(0, 82, 255, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 36px rgba(0, 82, 255, 0.7),
+      0 0 80px rgba(0, 82, 255, 0.3);
+    transform: scale(1.05);
+  }
+}
+
+@keyframes preloader-letter-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Hero post-preload entrance ───────────────────────── */
+.hero-text-col > * {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-ready .hero-text-col > *:nth-child(1) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.3s;
+}
+
+.hero-ready .hero-text-col > *:nth-child(2) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.46s;
+}
+
+.hero-ready .hero-text-col > *:nth-child(3) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.62s;
+}
+
+.hero-photo-col {
+  opacity: 0;
+  transform: translateX(32px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: 0.78s;
+}
+
+.hero-ready .hero-photo-col {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Section scroll-reveal animations ────────────────── */
+.section-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.section-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children inside animated sections */
+.animate-child {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.in-view .animate-child {
+  opacity: 1;
+  transform: translateY(0);
+}
