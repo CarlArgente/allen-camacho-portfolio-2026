@@ -42,13 +42,13 @@ export default function Experience() {
                   </p>
                   <h3 className="text-xl font-semibold text-white">{item.company}</h3>
                   <p className="mb-4 text-sm font-medium text-slate-400">{item.role}</p>
-                  <p className="mb-4 text-sm leading-relaxed text-slate-300">{item.blurb}</p>
+                  {item.blurb && <p className="mb-4 text-sm leading-relaxed text-slate-300">{item.blurb}</p>}
                   {item.highlights.length > 0 && (
                     <ul className="space-y-2">
-                      {item.highlights.map((highlight) => (
+                      {item.highlights.map((highlight, i) => (
                         <li
                           className="flex gap-2 text-sm text-slate-300"
-                          key={highlight.slice(0, 24)}
+                          key={i}
                         >
                           <Star className="mt-0.5 size-4 shrink-0 text-accent-secondary" />
                           <span>{highlight}</span>

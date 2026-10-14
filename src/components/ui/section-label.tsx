@@ -15,7 +15,7 @@ export function SectionLabel({ text, dark = false, className }: SectionLabelProp
         className,
       )}
     >
-      <span className="pulse-dot h-2 w-2 rounded-full bg-accent" />
+      <span className="h-2 w-2 rounded-full bg-accent" />
       <span
         className={cn(
           'font-mono text-xs uppercase tracking-[0.15em]',

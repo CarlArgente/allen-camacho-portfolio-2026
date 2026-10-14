@@ -5,193 +5,205 @@ export const portfolioContent = {
   // ── HERO ────────────────────────────────────────────
   hero: {
     fullName: 'Allen Camacho',
-    subHeadline: 'Business Development Executive | Certified HR Associate | Recruitment Strategist',
-    ctaPrimary: 'View My Work',
-    ctaSecondary: "Let's Connect",
+    headline: 'Business Development & Client Acquisition Professional',
+    subHeadline:
+      'Developing client relationships and connecting businesses with recruitment and Talent Solutions across Asia.',
+    intro:
+      'I am a business development and client acquisition professional with experience in recruitment and Talent Solutions. My work involves identifying business opportunities, understanding client hiring requirements, coordinating tailored solutions, and supporting commercial discussions from initial engagement through client onboarding. My recruitment background also gives me a practical understanding of candidate sourcing, client requirements, and the recruitment lifecycle.',
+    ctaPrimary: 'View My Experience',
+    ctaSecondary: 'Contact Me',
   },
 
   // ── ABOUT ───────────────────────────────────────────
   about: {
-    sectionLabel: 'About Allen',
+    sectionLabel: 'About Me',
     story: [
-      'It started in a classroom at Rizal Technological University, where Allen pursued a degree in Human Resource Development Management — not just to land a job, but to understand people on a deeper level.',
-      'Armed with a CHRA certification and an International Diploma in Office Administration & Management Technology, he stepped into the real world ready to do more than manage — he wanted to move mountains.',
-      'Today, Allen operates at the intersection of people, business, and strategy — building client pipelines across Asia, managing the full recruitment lifecycle, and even piloting drones at international racing events on the side.',
+      'I specialize in business development, client acquisition, and relationship management within recruitment and Talent Solutions. My experience includes prospecting new clients, conducting discovery conversations, understanding workforce requirements, coordinating proposals and pricing, supporting negotiations, and managing vendor accreditation requirements.',
+      'In my current role, I work with internal recruitment and delivery teams to help turn client requirements into actionable recruitment solutions. I also support the transition from signed agreements to delivery and look for opportunities to strengthen existing client relationships.',
+      'Previously, I worked in business development and recruitment, gaining experience in client engagement, candidate sourcing, and full-cycle recruitment. Outside my corporate roles, I coordinate drone racing events part-time, developing skills in logistics, project coordination, and event operations.',
     ],
-    funFact:
-      "Yes, I'm also a licensed drone pilot and live event operator. Life's too short for one career lane.",
-    stats: [
-      { metric: 'Years of Experience', value: '4+' },
-      { metric: 'Clients Acquired', value: '20+' },
-      { metric: 'Markets Served', value: 'PH · SG · APAC' },
-      { metric: 'Certifications', value: '3' },
+    strengthsLabel: 'Key Strengths',
+    strengths: [
+      'Business development and lead generation',
+      'Client acquisition and relationship management',
+      'Recruitment and Talent Solutions coordination',
+      'Proposal preparation and commercial negotiation',
+      'Vendor accreditation and onboarding',
+      'Account development and internal stakeholder coordination',
     ],
   },
 
   // ── EXPERIENCE ──────────────────────────────────────
   experience: {
-    sectionLabel: 'My Career Journey',
+    sectionLabel: 'Professional Experience',
     items: [
-       {
-  company: 'CXC Global',
-  location: 'Philippines',
-  role: 'Senior Client Acquisition',
-  duration: 'Feb 2025 – Present',
-  blurb:
-    'In a senior acquisition role, Allen partners with organizations to unlock global workforce solutions through CXC’s comprehensive service offerings. He focuses on helping businesses scale internationally, optimize workforce strategies, and navigate complex compliance landscapes with confidence.',
-  highlights: [
-    'Provides access to an extended global talent pool of specialized resources and project-based teams',
-    'Delivers blended onshore and offshore workforce solutions across multiple regions',
-    'Enables greater business agility by helping companies scale and adjust workforce strategies efficiently',
-    'Drives cost optimization and operational efficiency by consolidating global consulting, contracting, payroll, and workforce providers',
-    'Supports hiring, onboarding, offboarding, payroll, and invoicing across 100+ countries',
-    'Helps clients outsource risk and manage complexities in taxation, regulation, and compliance',
-    'Empowers SMEs to expand into new markets without requiring a local entity presence',
-    'Offers streamlined solutions for the gig economy and digital nomad workforce',
-    'Implements flexible engagement models including SOW, co-managed services, managed capacity, staff augmentation, and project-based services',
-    'Supports service delivery excellence through performance management, team leadership, coaching, and mentoring',
-  ],
-},
       {
-        company: 'M and J Solutions Provider',
-        location: 'Philippines',
-        role: 'Business Development Executive',
-        duration: 'January 2024 – January 2025',
+        company: 'CXC Global',
+        location: 'Philippines (Hybrid)',
+        role: 'Senior Client Acquisition, Talent Solutions',
+        duration: 'February 2025 – Present',
         blurb:
-          'Back on home turf and hitting the ground running. Allen leads business development initiatives targeting both local and international (ASIA) clients — blending hustle with strategy to consistently exceed acquisition quotas.',
+          'I support regional business development and client acquisition for Talent Solutions, pursuing opportunities across markets where CXC Global has the capability to deliver services.',
         highlights: [
-          'Sourcing and nurturing new client relationships from first contact to contract',
-          'Leads presentations, negotiations, contract revisions, and accreditation processes',
-          'Consistently achieving a quota of 3–5 new clients per month across local and APAC markets',
-          'Provides ad hoc support across the full recruitment cycle',
+          'Identify and develop new business opportunities across the Philippines, Singapore, Malaysia, Indonesia, Thailand, Vietnam, Hong Kong, and South Korea',
+          'Engage prospective clients, conduct discovery discussions, and assess recruitment and workforce requirements',
+          'Coordinate with recruitment and delivery teams to develop solutions aligned with client needs and local service capabilities',
+          'Prepare proposals, pricing, and commercial recommendations with internal stakeholders',
+          'Support commercial negotiations, contract discussions, statements of work, and agreement requirements',
+          'Manage vendor accreditation and onboarding documentation, following up through approval',
+          'Facilitate handovers of signed clients to recruitment and delivery teams',
+          'Maintain client relationships and identify opportunities for repeat business or additional hiring',
+          'Refer interest in other workforce services to the relevant internal service owners',
+        ],
+      },
+      {
+        company: 'M and J Solutions Provider Inc.',
+        location: 'Philippines',
+        role: 'Business Development Officer',
+        duration: 'January 2024 – January 2025',
+        blurb: '',
+        highlights: [
+          'Researched and identified prospective clients and new business opportunities',
+          'Engaged prospects and presented services based on business requirements',
+          'Maintained client communication and supported relationship development',
+          'Assisted with negotiations, contract revisions, and vendor accreditation',
+          'Provided additional support for recruitment activities and client requirements when needed',
         ],
       },
       {
         company: 'RRecruiter PTE LTD',
-        location: 'Singapore',
+        location: 'Singapore market',
         role: 'Business Development Executive',
         duration: 'June 2022 – September 2023',
-        blurb:
-          'Allen took the leap — from the Philippines to the competitive Singapore market — and thrived. Working with MNC and SME clients across the APAC region, he managed full-cycle recruitment while driving business growth through strategic client management.',
+        blurb: '',
         highlights: [
-          'Executed 360° recruitment: client sourcing + candidate sourcing simultaneously',
-          'Managed full recruitment lifecycle: interview arrangement → onboarding',
-          'Served MNC and SME clients across the SG market and broader APAC region',
-          'Leveraged Jobstreet, MyCareersFuture, LinkedIn, and more',
-          'Implemented tailored talent strategies to meet diverse client requirements',
+          'Supported business development and client engagement for the Singapore market',
+          'Understood job requirements and coordinated recruitment activities around client needs',
+          'Sourced and screened candidates using relevant recruitment platforms and professional networks',
+          'Coordinated recruitment from candidate sourcing and screening through placement',
+          'Maintained communication with clients and candidates throughout the recruitment process',
         ],
       },
       {
-        company: 'Mcfly Industries',
+        company: 'Mcfly Industries (Drone Racing)',
         location: '',
         role: 'Project Manager (Part-Time)',
         duration: '2020 – Present',
-        blurb:
-          "When he's not closing deals, Allen is in the field — managing operations for drone racing events, directing live coverage, and supporting international pilots.",
+        blurb: '',
         highlights: [
-          'Event management for competitive drone racing tournaments',
-          'Certified drone pilot and timing system operator',
-          'OBS operator for live streaming and recording; video/photo editing',
-          'Camera operator and personal assistant to the CEO',
-          'GitHub-tracked software project management',
-          'Assisted foreign pilots with logistics and coordination',
+          'Coordinate event logistics, participant requirements, and operational preparations',
+          'Support race operations using timing systems',
+          'Assist with live streaming and event recording using OBS Studio',
+          'Support event photography, video editing, and media production',
+          'Coordinate operational requirements to help events run smoothly',
         ],
-      },
-      {
-        company: 'Sweet Harmony Gardens',
-        location: '',
-        role: 'Waiter and Setup Crew',
-        duration: '2018 – 2019',
-        blurb:
-          "Every great career has a humble beginning. Allen's foundation in professionalism, service, and attention to detail was built one table at a time.",
-        highlights: [],
       },
     ],
   },
 
   // ── SKILLS ──────────────────────────────────────────
   skills: {
-    sectionLabel: 'What I Bring to the Table',
-    technical: [
-      { tool: 'Microsoft Office', category: 'Productivity' },
-      { tool: 'Outlook', category: 'Communication' },
-      { tool: 'Jobstreet, LinkedIn, Indeed, MCF', category: 'Talent Sourcing' },
-      { tool: 'GitHub', category: 'Project Tracking' },
-      { tool: 'OBS Studio', category: 'Live Production' },
-      { tool: 'Adobe, Canva', category: 'Design & Media' },
-      { tool: 'HubSpot', category: 'CRM / Sales' },
+    sectionLabel: 'Skills & Expertise',
+    expertise: [
+      {
+        title: 'Business Development',
+        description: 'Identify prospects, generate leads, initiate conversations, and develop opportunities.',
+      },
+      {
+        title: 'Client Acquisition',
+        description:
+          'Understand client needs, present relevant solutions, and support the process from discovery through onboarding.',
+      },
+      {
+        title: 'Client Relationship Management',
+        description:
+          'Maintain client communication, coordinate requirements, and identify opportunities to strengthen relationships.',
+      },
+      {
+        title: 'Commercial Coordination',
+        description:
+          'Support proposals, pricing, negotiations, contract discussions, and statements of work.',
+      },
+      {
+        title: 'Recruitment & Talent Solutions',
+        description:
+          'Understand hiring requirements and coordinate with recruitment teams on sourcing and workforce needs.',
+      },
+      {
+        title: 'Vendor Accreditation & Onboarding',
+        description: 'Coordinate documentation and follow up on client accreditation processes.',
+      },
+      {
+        title: 'Project & Event Coordination',
+        description:
+          'Coordinate event logistics, operational requirements, timing systems, and live production support.',
+      },
     ],
-    soft: [
-      'Fast Learner — picks up new tools, markets, and industries quickly',
-      'Stress Management — stays composed under pressure and tight deadlines',
-      'Decision Making — confident in high-stakes situations',
-      'Critical Thinking — evaluates options before acting',
-      'Goal-Oriented — quota-driven and self-motivated',
-      'Sales — consultative selling with relationship-first approach',
-      'Negotiation — from terms to talent, always finding the win-win',
+    toolsLabel: 'Tools & Platforms',
+    tools: [
+      { category: 'Business Development & CRM', items: ['Salesforce', 'Lusha', 'HubSpot'] },
+      { category: 'Recruitment & Sourcing', items: ['LinkedIn', 'JobStreet', 'Indeed', 'MyCareersFuture'] },
+      { category: 'Productivity & Project Coordination', items: ['Microsoft Office', 'Outlook', 'GitHub'] },
+      { category: 'Event Production & Media', items: ['OBS Studio', 'Adobe tools', 'Canva'] },
     ],
-    domain: [
-      '360° Recruitment (End-to-End)',
-      'Business Development & Client Acquisition',
-      'Cross-Border Talent Management (SG / PH / APAC)',
-      'Event Management & Live Production',
-      'Contract Negotiation & Accreditation',
-      'Drone Operations & Timing Systems',
+  },
+
+  // ── REGIONAL BUSINESS DEVELOPMENT ───────────────────
+  regional: {
+    sectionLabel: 'Regional Business Development',
+    description:
+      'My current role at CXC Global involves pursuing business development and Talent Solutions opportunities across markets where the company has the capability to deliver services.',
+    marketsLabel: 'Markets Supported Through CXC Global',
+    markets: [
+      'Philippines',
+      'Singapore',
+      'Malaysia',
+      'Indonesia',
+      'Thailand',
+      'Vietnam',
+      'Hong Kong',
+      'South Korea',
     ],
   },
 
   // ── EDUCATION ───────────────────────────────────────
   education: {
-    sectionLabel: 'Foundations That Built Me',
+    sectionLabel: 'Education & Certifications',
     items: [
       {
-        credential: 'BSBA — Human Resource Development Management',
+        credential: 'Bachelor of Science in Business Administration, Major in Human Resource Development Management',
         institution: 'Rizal Technological University',
-        year: '2018–2022',
+        year: '2018 – 2022',
       },
       {
         credential: 'Certified HR Associate (CHRA)',
         institution: 'HREAP',
-        year: '—',
+        year: '2022',
       },
       {
-        credential: 'International Diploma in Office Administration & Management Technology',
-        institution: '—',
-        year: '—',
+        credential: 'International Diploma in Office Administration and Management Technology',
+        institution: '',
+        year: '2022',
       },
     ],
   },
 
-  // ── TESTIMONIALS ────────────────────────────────────
-  testimonials: {
-    sectionLabel: 'What People Say',
-    items: [
-      {
-        name: 'Ren Espinosa',
-        role: 'Recruitment Head / Operations Manager',
-        quote:
-          'Allen is one of those rare professionals who genuinely cares about outcomes — not just for the company, but for every candidate and client he works with. His ability to manage both sides of the recruitment table while driving business development results is remarkable. He brought energy, structure, and real results to our team.',
-      },
-      {
-        name: 'Marlon Caras',
-        role: 'CEO & Founder, MCFLY Industries',
-        quote:
-          "I've worked with Allen for years, and what sets him apart isn't just his skill set — it's his mindset. Whether he's behind a camera, managing event logistics, or coordinating with international pilots, he shows up fully committed. He's the kind of person you want in your corner when things get complicated.",
-      },
-      {
-        name: 'Helen Fan Yi',
-        role: 'Associate Director – Asia, CXC Global',
-        quote:
-          'Allen stood out immediately as someone who understood both the business side and the human side of recruitment. Working across the Asia market requires cultural awareness, persistence, and genuine relationship-building — and Allen delivers on all three.',
-      },
-    ],
+  // ── DIGITAL BUSINESS CARD ───────────────────────────
+  digitalCard: {
+    sectionLabel: 'Digital Business Card',
+    heading: 'Connect Instantly',
+    description:
+      'Scan the QR code with your phone to open my digital profile. The same link is on my NFC business card, so you can also tap the card to connect.',
   },
 
   // ── CONTACT ─────────────────────────────────────────
   contact: {
-    sectionLabel: "Let's Build Something Together",
-    location: 'Taytay, Rizal, Philippines',
-    phone: '09511589090',
+    sectionLabel: "Let's Connect",
+    intro:
+      'I am open to connecting with professionals and organizations interested in business development, client acquisition, recruitment, and Talent Solutions. For professional inquiries and networking, feel free to reach out.',
+    location: 'Rizal, Philippines',
+    phone: '0951 158 9090',
     email: 'allencamacho5@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/allen-camacho-a592122b0/',
   },
 }

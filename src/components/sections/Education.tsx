@@ -20,7 +20,7 @@ export default function Education() {
                   <GraduationCap className="size-5 text-accent" />
                   {item.year}
                 </CardTitle>
-                <CardDescription>{item.institution}</CardDescription>
+                {item.institution && <CardDescription>{item.institution}</CardDescription>}
               </CardHeader>
               <CardContent className="text-sm text-slate-700">{item.credential}</CardContent>
             </Card>

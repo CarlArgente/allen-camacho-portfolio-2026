@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const NAV_ITEMS = [
-  { label: 'About', id: 'about' },
+  { label: 'Home', id: 'hero' },
+  { label: 'About Me', id: 'about' },
   { label: 'Experience', id: 'experience' },
-  { label: 'Skills', id: 'skills' },
-  { label: 'Education', id: 'education' },
-  { label: 'Testimonials', id: 'testimonials' },
+  { label: 'Skills & Expertise', id: 'skills' },
+  { label: 'Regional Business Development', id: 'regional' },
+  { label: 'Education & Certifications', id: 'education' },
   { label: 'Contact', id: 'contact' },
 ]
 
@@ -58,12 +59,12 @@ export default function Navbar() {
         </button>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-0 lg:flex">
           {NAV_ITEMS.map(({ label, id }) => (
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className={`rounded-lg px-4 py-2 text-sm transition-colors hover:bg-accent/5 hover:text-accent ${
+              className={`rounded-lg px-3 py-2 text-sm transition-colors hover:bg-accent/5 hover:text-accent ${
                 activeId === id ? 'text-accent' : 'text-muted-foreground'
               }`}
             >
@@ -74,7 +75,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="text-muted-foreground transition hover:text-foreground md:hidden"
+          className="text-muted-foreground transition hover:text-foreground lg:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle navigation menu"
         >
@@ -84,7 +85,7 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <nav className="border-t border-border bg-background/95 px-6 py-4 backdrop-blur md:hidden">
+        <nav className="border-t border-border bg-background/95 px-6 py-4 backdrop-blur lg:hidden">
           {NAV_ITEMS.map(({ label, id }) => (
             <button
               key={id}

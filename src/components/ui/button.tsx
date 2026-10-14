@@ -8,7 +8,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-gradient-to-r from-accent to-accent-secondary px-5 py-2.5 text-accent-foreground shadow-[0_4px_14px_rgba(0,82,255,0.25)] hover:-translate-y-0.5 hover:brightness-110 hover:shadow-[0_8px_24px_rgba(0,82,255,0.35)]',
+          'bg-gradient-to-r from-accent to-accent-secondary px-5 py-2.5 text-accent-foreground shadow-[0_4px_14px_rgba(29,78,216,0.25)] hover:-translate-y-0.5 hover:brightness-110 hover:shadow-[0_8px_24px_rgba(29,78,216,0.35)]',
         outline:
           'border border-border bg-transparent px-5 py-2.5 text-foreground hover:-translate-y-0.5 hover:border-accent/35 hover:bg-muted',
       },
